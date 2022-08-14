@@ -9,7 +9,7 @@ namespace CSharp_Shell
 { public static void Main()
 { Int32 k, l, m, n;
 Console.Write("m n: ");
-var s = Console.ReadLine().Split(" ");
+var s = Console.ReadLine()!.Split(" ");
 m = Convert.ToInt32(s[0]);
 n = Convert.ToInt32(s[1]);
 Random rnd = new Random();
