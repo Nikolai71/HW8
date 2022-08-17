@@ -18,7 +18,7 @@ for (int i = 0; i < m; i++)
     for (int j = 0; j < n; j++)
     {
         matrix[i, j] = random.NextDouble() * 10; 
-        Console.Write("{0,6:F2}", matrix[i, j]);
+        Console.Write("{0,6:F1}", matrix[i, j]);
     }
     Console.WriteLine();
 }
