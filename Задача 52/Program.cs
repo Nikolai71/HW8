@@ -16,12 +16,13 @@ for (int i = 0; i < m; i++)
 {
     for (int j = 0; j < n; j++)
     {
-        arr[i, j] = new Random().Next(0, 100);
+        arr[i, j] = new Random().Next(-100, 100);
         Console.Write(arr[i, j] + " ");
     }
 Console.WriteLine();
 }
 Console.WriteLine(arr.GetLength(0));
+Console.WriteLine();
 for (int j = 0; j < arr.GetLength(1); j++)
 {
     double sum = 0;
@@ -29,5 +30,5 @@ for (int j = 0; j < arr.GetLength(1); j++)
     {
         sum += arr[i, j];
     }
-    Console.Write($" {sum / arr.GetLength(0)} ");
+    Console.Write($"{ sum / arr.GetLength(0)} ");
 }
